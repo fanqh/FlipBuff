@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"testprintf configuration\startup_stm32f407xx.o"
+"testprintf configuration\main.o"
+"testprintf configuration\stm32f4xx_hal_msp.o"
+"testprintf configuration\stm32f4xx_it.o"
+"testprintf configuration\retarget.o"
+"testprintf configuration\flip_buff.o"
+"testprintf configuration\hal_debug.o"
+"testprintf configuration\system_stm32f4xx.o"
+"testprintf configuration\stm32f4xx_hal.o"
+"testprintf configuration\stm32f4xx_hal_cortex.o"
+"testprintf configuration\stm32f4xx_hal_dma.o"
+"testprintf configuration\stm32f4xx_hal_dma_ex.o"
+"testprintf configuration\stm32f4xx_hal_flash.o"
+"testprintf configuration\stm32f4xx_hal_flash_ex.o"
+"testprintf configuration\stm32f4xx_hal_gpio.o"
+"testprintf configuration\stm32f4xx_hal_pwr.o"
+"testprintf configuration\stm32f4xx_hal_pwr_ex.o"
+"testprintf configuration\stm32f4xx_hal_rcc.o"
+"testprintf configuration\stm32f4xx_hal_rcc_ex.o"
+"testprintf configuration\stm32f4xx_hal_uart.o"
+--library_type=microlib --strict --scatter "TestPrintf Configuration\TestPrintf Configuration.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TestPrintf Configuration.map" -o "TestPrintf Configuration\TestPrintf Configuration.axf"

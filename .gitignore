@@ -1,0 +1,11 @@
+TestPrintf Configuration
+*~
+*.pdf
+*.dep
+*.orig
+*.bak
+*.zzw
+Exe
+List
+Obj
+settings
